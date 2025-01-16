@@ -55,4 +55,4 @@ jobs:
         run: cargo fmt --check
 
       - name: Show version
-        run: ./target/${{ matrix.target }}/release/zola
+        run: ./zola --version

@@ -51,7 +51,7 @@ jobs:
         run: cargo build --release --target ${{ matrix.target }}
 
       - name: Show version
-        run: ./target/${{ matrix.target }}/release/zola
+        run: ./target/${{ matrix.target }}/release/zola --version
 
       - name: Archive (UNIX)
         run: |
